@@ -1,0 +1,57 @@
+[
+    {
+        "id" : "1",
+        "pname" : "Atta",
+        "company" : "Aashirvad",
+        "pimage" : "../images/atta_aashirvaad.jpg",
+        "price" : "200",
+        "net_wt" : "5kg",
+        "quantity" : "40",
+        "mfd" : "2022/03/24" , 
+        "expiry" : "2022/05/24"
+    },
+    {
+        "id" : "2",
+        "pname" : "Rice",
+        "company" : "Fortune",
+        "pimage" : "../images/rice_fortune.jpg",
+        "price" : "500",
+        "net_wt" : "5kg",
+        "quantity" : "40",
+        "mfd" : "2021/03/24" , 
+        "expiry" : "2023/05/24"
+    },
+    {
+        "id" : "3",
+        "pname" : "Oil",
+        "company" : "Fortune",
+        "pimage" : "../images/oil_fortune.jpg",
+        "price" : "200",
+        "net_wt" : "5ltr",
+        "quantity" : "40",
+        "mfd" : "2022/01/09" , 
+        "expiry" : "2023/11/28"
+    },
+    {
+        "id" : "4",
+        "pname" : "Sugar",
+        "company" : "24 Mantra",
+        "pimage" : "../images/organicsugar_24.jpg",
+        "price" : "200",
+        "net_wt" : "1kg",
+        "quantity" : "40",
+        "mfd" : "2022/02/12" , 
+        "expiry" : "2023/05/30"
+    },
+    {
+        "id" : "5",
+        "pname" : "Tea",
+        "company" : "Tata Tea Gold",
+        "pimage" : "../images/tea_tata.jpg",
+        "price" : "1000",
+        "net_wt" : "1kg",
+        "quantity" : "40",
+        "mfd" : "2022/03/24" , 
+        "expiry" : "2022/05/24"
+    }
+]

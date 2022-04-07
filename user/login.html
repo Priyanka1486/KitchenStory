@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />    
+</head>
+<body>
+    <section style="margin-bottom:60px;">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+            <a href="#" class="navbar-brand">
+                <img src="../images/logo.png" alt="logo" width="30" height="30" />
+                Kitchen Story
+            </a>
+             <button class="navbar-toggler"
+            type="buttton" 
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-auto">
+                    <button type="button" id="registerbtn" class="btn btn-outline-light my-2 my-sm-0" onclick="register();">Register</button>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="support.html" class="nav-link">Support</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </section>
+    <section style="margin-top:50px;">
+    <main class="col-md-5 mx-auto">
+        <header class="text-center">
+            <h1 class="display-4 text-primary text-uppercase">Login</h1>
+            <h6 class="text-secondary">Enter your credentials</h6>
+        </header>
+        <hr />
+        <form action="home.html" id="login_form" method="get" class="font-weight-bold" >  
+            <!-- Email-->
+            <div id="emaildiv" name="emaildiv" class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="abc@xyz.com" required />    
+                <small id="emailHelp" name="emailHelp" class="form-text text-danger" ></small>
+            </div>
+            
+            <!-- Password -->
+            <div id="passworddiv "name="passwordiv" class="form-group">
+                <label for="password">Password:</label>
+                <input class="form-control" type="password" id="password" name="password" required />
+            </div>
+            
+            <!--Captcha -->
+            <div id="captchadiv" name="captchadiv" class=" row form-group">
+                <div id="captchafield" name="captchafield" class="col-lg-6">
+                    <label for="captcha" >Captcha Code:</label>
+                    <input type="text" id="captcha" name="captcha" value="Q23f45" class="font-weight-bold text-primary bg-warning form-control" disabled />        
+                </div>
+                <div id="usercapatcha" name="usercapatcha" class="col-lg-6">
+                    <label for="captcha" >Enter Captcha:</label>
+                    <input type="text" id="usercaptcha" name="usercaptcha" class="form-control" required  />    
+                </div>
+            </div>
+
+            <!--check signedin-->
+            <div id="checksigned" name="checksigned" class="font-weight-normal text-secondary form-group">
+                <input type="checkbox" id="signed" name="signed" />
+                <label for="signed" class="form-check-label">keep me signed in </label>
+            </div>
+            
+            <!-- Login Button -->
+            <div id="loginbtn" name="loginbtn" class="btn btn-block btn-primary my-4">
+                <input type="submit" id="loginbutton" name="loginbutton" class="btn btn-block btn-primary"
+                 value="Login">
+            </div>
+        </form>   
+    </main>
+    </section> 
+<script src="../ksjsfiles/formvalidation.js"></script>
+<script>
+    function register(){
+        location.href = "registration.html";
+    }
+</script>
+</body>
+</html>

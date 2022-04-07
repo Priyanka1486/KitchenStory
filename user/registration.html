@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />    
+</head>
+<body>
+    <section style="margin-bottom:60px;">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+            <a href="#" class="navbar-brand">
+                <img src="../images/logo.png" alt="logo" width="30" height="30" />
+                Kitchen Story
+            </a>
+             <button class="navbar-toggler"
+            type="buttton" 
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-auto">
+                    <button type="button" class="btn btn-outline-light my-2 my-sm-0" onclick="login();">Login</button>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="support.html" class="nav-link">Support</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </section>
+    <section style="margin-top:50px;">
+    <main class="col-md-5 mx-auto">
+        <header class="text-center">
+            <h1 class="display-4 text-primary text-uppercase">Register</h1>
+            <h6 class="text-secondary">Provide your details</h6>
+        </header>
+        <hr />
+            <form action="login.html" method="get" class="font-weight-bold">
+                <!--Name-->
+                <div id="namediv" name="namediv" class=" row form-group">
+                    <div id="fname" name="fname" class="form-group col-lg-6">
+                        <label for="firstname">First name:*</label>
+                        <input type="text" id="firstname" name="firstname" pattern="[A-Z][a-z]*" title="Enter alphabets only" required class="form-control" />
+                    </div>
+                    <div id="lname" name="lname" class="form-group col-lg-6">
+                        <label for="lastname">Last name:</label>
+                        <input type="text" id="lastname" name="lastname" class="form-control" pattern="[A-Z][a-z]*" title="Enter alphabets only" />
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div id="emailField" name="emailField" class="form-group">
+                    <label for="email">Email:*</label>  
+                    <input type="text" id="email" name="email" class="form-control" required placeholder="abc@xyz.com"  />
+                    <small id="emailFieldHelp" class="form-text text-muted" >Your mail id is safe with us</small>
+                </div>
+                
+                <!-- Password -->
+                <div id="passworddiv" name="passworddiv" class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                    <small id="passworddivhelp" class="form-text text-muted" >
+                        <ul>
+                            <li>Password must be of 8 character</li>
+                            <li>Password must cantain atleast one didgit, one small letter, one capital letter</li>
+                        </ul>
+                    </small>
+                </div>
+    
+                <!-- Date of Birth-->
+                <div id="dobField" name="dobField" class="form-group">
+                    <label for="dob">DOB:</label>
+                    <input type="date" id="dob" name="dob" class="form-control" required>
+                </div>
+    
+                <!--Age-->
+                <div id="ageField" name="ageField" class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" class="form-control">
+                </div>
+    
+                <!-- Gender -->
+                <div id="genderField" name="genderField" class="form-group">
+                    <label for="genderoption">Gender:</label><br />
+                    <div class="font-weight-normal" id="gender" name="gender">
+                       <div class="form-check form-check-inline" >
+                            <input type="radio" name="gender" id="male" value="Male" />
+                            <label for="male" class="form-check-label" >Male</label>
+                       </div>
+                        <div class="form-check form-check-inline" >
+                            <input type="radio" name="gender" id="female" value="Female" />
+                            <label for="female" class="form-check-label" >Female</label>
+                        </div>
+                        <div class="form-check form-check-inline" >
+                            <input type="radio" name="gender" id="other" value="Other" />
+                            <label for="other" class="form-check-label" >Other</label>
+                        </div>
+                    </div>    
+                </div>
+    
+                <!-- State -->
+                <div id="statediv" name="statediv" class="form-group">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" class="form-control" pattern="[A-Z][a-z]*" title="Enter alphabets only" required>
+                </div>
+    
+                <!-- Country -->
+                <div id="countryField" name="countryField" class="form-group">
+                    <label for="country">Country:</label>
+                    <select class="form-control" id="country" name="country">
+                    <option value="india" selected>India</option>
+                    <option value="australia">Australia</option>
+                    <option value="england" >England</option>
+                    <option value="south africa">South Africa</option>
+                    </select>
+                </div>
+    
+                  <input
+                    type="submit"
+                    value="Register"
+                    class="btn btn-block btn-primary mb-2"
+                    class="btn btn-block btn-primary my-4"
+                  />
+                </div>
+              </form>
+            </main>
+        </section>
+        <script src="../ksjsfiles/formvalidation.js"></script>
+        <script>
+            function login(){
+                location. href = "login.html";
+            }
+        </script>            
+    </body>
+    </html>

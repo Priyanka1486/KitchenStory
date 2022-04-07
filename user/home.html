@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />    
+</head>
+<body>
+    <div class="container">
+    <section style="margin-bottom:80px;">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+            <a href="#" class="navbar-brand">
+                <img src="../images/logo.png" alt="logo" width="30" height="30" />
+                Kitchen Story
+            </a>
+             <button class="navbar-toggler"
+            type="buttton" 
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-auto">
+                    <a href="cartitems.html" class="nav-link">Cart</a>
+                </li>    
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="support.html" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item mr-auto">
+                    <a href="logout.html" class="nav-link">Logout</a>
+                </li>    
+            </ul>
+        </div>
+        </nav> 
+    </section>
+    <section>
+            <form action="fooditemlist.html" method="get" >
+                <div id="searchdiv" name="searchdiv" class="form-group" >
+                    <label for="searchitem" class="form-check-label">Search Food Item:</label>
+                    <input type="text" id="searchitem" name="searchitem" placeholder="search food item"
+                     class="form-control-inline form-control" /><input type="image" src="../images/search.jpg" width="30">
+                </div>
+            </form>
+            <h5 class="display-5 mt-5">Recommended Items</h5>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/atta_aashirvaad.jpg" width="30" class="card-img-top" />
+                        <h6 class="card-title">Atta</h6>
+                        <p class="card-text">Aashirvad Atta</p>
+                        <p class="card-text">10kg</p>
+                        <a href="itemdetail.html?id=1" class="btn btn-primary" role="buttton">See Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/turmeric_aashirvaad.jpg" width="40" class="card-img-top" />
+                        <h6 class="card-title">Turmeric Powder</h6>
+                        <p class="card-text">Aashirvad Turmeric Powder</p>
+                        <p class="card-text">100gm </p>
+                        <a href="itemdetail.html?id=6" class="btn btn-primary" role="buttton">See Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/salt_tata.jpg" width="40" class="card-img-top" />
+                        <h6 class="card-title">Salt</h6>
+                        <p class="card-text">Tata Salt</p>
+                        <p class="card-text">1kg</p>
+                        <a href="itemdetail.html?id=7" class="btn btn-primary" role="buttton">See Details</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/organicsugar_24.jpg" class="card-img-top" />
+                        <h6 class="card-title">Sugar Organic</h6>
+                        <p class="card-text">24 Mantra</p>
+                        <p class="card-text">2kg</p>
+                        <a href="itemdetail.html?id=4" class="btn btn-primary" role="buttton">See Details</a>
+                    </div>
+                </div>
+            </div>
+</section>
+</div> 
+<script type="module" src="../ksjsfiles/fooditem.js" ></script> 
+</body>
+</html>
